@@ -2,3 +2,10 @@
 @import 'global/*.scss';
 @import '**/_*.scss';
 @import '../components/**/*.scss';
+@import './variables.scss';
+@import './page-blocks/header.scss';
+@import './page-blocks/about.scss';
+@import './bem-blocks/button.scss';
+@import './bem-blocks/carouseltem.scss';
+@import '../scss/page-blocks/footer.scss';
+@import './page-blocks/modal.scss'

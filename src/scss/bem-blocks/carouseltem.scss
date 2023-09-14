@@ -1,0 +1,121 @@
+@import '../variables.scss';
+
+.item {
+  margin: 50px 18px;
+  border-radius: 5px;
+  background-color: #E2F0EF;
+  color: $textColor;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  &__info {
+    padding: 20px 20px 50px 20px;
+  }
+  &__image {
+    width: 100%;
+  }
+  &__title {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  &__description {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  &__list {
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 20px;
+    >li {
+      display: flex;
+      align-items: center;
+      font-weight: 400;
+      line-height: 145%;
+      font-size: 14px;
+      &::before {
+        content: '';
+        background-color: $accentColor;
+        width: 7px;
+        height: 7px;
+        border-radius: 100%;
+        margin-right: 15px;
+      }
+    }
+  }
+  &__priceBlock {
+    display: flex;
+    margin-bottom: 25px;
+  }
+  &__price {
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 10px;
+  }
+  &__oldPrice {
+    color: #868686;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration-line: line-through;
+  }
+  &__buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__button-booking {
+    background-color: $accentColor;
+    color: #ffffff;
+    font-weight: 400;
+    &:active {
+      background-color: #00D29F;
+    }
+    &:hover  {
+      background-color: #00D29F;
+    }
+  }
+  &__button-more {
+    background-color: transparent;
+    border: solid 1px $accentColor !important;
+    color: $accentColor;
+    &:active {
+      background-color: $accentColor;
+      color: #ffffff;
+    }
+    &:hover  {
+      background-color: $accentColor;
+      color: #ffffff;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .item {
+    display: flex;
+    flex-direction: row-reverse;
+    &__image {
+      clip-path: polygon(5% 0, 100% 0, 100% 100%, 37% 100%);
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 50px;
+      margin-top: 50px;
+    }
+    &__title {
+      font-size: 38px;
+    }
+    &__description {
+      font-size: 22px;
+    }
+    &__list {
+      >li {
+        font-size: 16px;
+      }
+    }
+    &__button-booking {
+      margin-right: 15px;
+    }
+  }
+
+}

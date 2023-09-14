@@ -1,0 +1,27 @@
+<div class="item">
+	<img
+		class="item__image"
+		src="../../img/services.png"
+		alt="services image"
+	/>
+	<div class="item__info">
+		<h3 class="item__title">@@title</h3>
+		<p class="item__description">@@description</p>
+		<ul class="item__list">
+			<li>@@listItem1</li>
+			<li>@@listItem2</li>
+			<li>@@listItem3</li>
+			<li>@@listItem4</li>
+		</ul>
+		<div class="item__priceBlock">
+			<p class="item__price">Всего @@price</p>
+			<p class="item__oldPrice">@@oldPrice</p>
+		</div>
+		<div class="item__buttons">
+			@@include('../bem-blocks/_button.html', { "className":
+			"item__button-booking", "text": "Записаться" })
+			@@include('../bem-blocks/_button.html', { "className":
+			"item__button-more", "text": "Подробнее" })
+		</div>
+	</div>
+</div>

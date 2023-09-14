@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport"
 				content="width=device-width, initial-scale=1.0">
 	<meta name="description"
-				content="Gulp pack for easy html/php markup development">
+				content="Test task for Rocket">
 	<meta name="keywords"
 				content="">
-	<link rel="shortcut icon"
+	<!-- <link rel="shortcut icon"
 				href="img/favicons/favicon.svg"
 				type="image/svg+xml">
 	<link rel="shortcut icon"
@@ -17,23 +17,244 @@
 				type="image/webp">
 	<link rel="shortcut icon"
 				href="img/favicons/favicon.png"
-				type="image/x-icon">
+				type="image/x-icon"> -->
 	<link rel="stylesheet"
 				href="css/libs.min.css">
 	<link rel="stylesheet"
 				href="css/style.min.css">
-	<title>Easy-webdev-startpack v3.0</title>
+	<title>Rocket Test</title>
 </head>
 
 
 <body>
-	<header class="header"></header>
+	
+<header class="header">
+  <div class="header__burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <!-- desktop view -->
+  <div class="header__left">
+    <h2 class="header__logo"><a href="/">logo</a></h2>
+    <div class="header__address">
+      <p class="header__city"><img src="../../img/place.svg" alt="place">Ростов-на-Дону</p>
+      <p class="header__street">ул. Ленина, 2Б</p>
+    </div>
+  </div>
+  <div class="header__right">
+    <div class="header__phone">
+      <img src="../../img/wa.svg" alt="">
+      <a href="tel:+78630000000">+7(863) 000 00 00</a>
+    </div>
+    <button data-openModal class="header__mainButton button">Записаться</button>
 
-	<main class="main"></main>
-	<footer class="footer"></footer>
+  </div>
+  <!-- end desktop view -->
+  <div class="header__info">
+    <a href="tel:+78630000000">+7(863) 000 00 00</a>
+    <p>Ростов-на-Дону</p>
+  </div>
+  <div class="header__menu">
+    <ul>
+      <li><a href="/about">О клинике</a></li>
+      <li><a href="/services">Услуги</a></li>
+      <li><a href="/specialists">Специалисты</a></li>
+      <li><a href="/price">Цены</a></li>
+      <li><a href="/contacts">Контакты</a></li>
+    </ul>
+    <button data-openModal class="header__menuButton button">Записаться</button>
+
+  </div>
+</header>
+
+	<main class="main">
+		<div class="about">
+  <div class="about__image">
+    <img src="./img/main.webp" alt="">
+  </div>
+  <div class="about__text">
+    <h1>Многопрофильная клиника для детей и взрослых</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+  </div>
+</div>
+
+		<div
+	class="services slider"
+>
+	<div class="slides">
+		<div class="services__item slide">
+			<div class="item">
+	<img
+		class="item__image"
+		src="../../img/services.png"
+		alt="services image"
+	/>
+	<div class="item__info">
+		<h3 class="item__title">Check-up</h3>
+		<p class="item__description">для мужчин</p>
+		<ul class="item__list">
+			<li>Гормональный скрининг</li>
+			<li>Тестостерон</li>
+			<li>Свободный тестостерон</li>
+			<li>Глобулин, связывающий половые гормоны</li>
+		</ul>
+		<div class="item__priceBlock">
+			<p class="item__price">Всего 2800₽</p>
+			<p class="item__oldPrice">3500₽</p>
+		</div>
+		<div class="item__buttons">
+			<button data-openModal class="item__button-booking button">Записаться</button>
+
+			<button data-openModal class="item__button-more button">Подробнее</button>
+
+		</div>
+	</div>
+</div>
+
+		</div>
+		<div class="services__item slide">
+			<div class="item">
+	<img
+		class="item__image"
+		src="../../img/services.png"
+		alt="services image"
+	/>
+	<div class="item__info">
+		<h3 class="item__title">Check-up 2</h3>
+		<p class="item__description">для мужчин</p>
+		<ul class="item__list">
+			<li>Гормональный скрининг</li>
+			<li>Тестостерон</li>
+			<li>Свободный тестостерон</li>
+			<li>Глобулин, связывающий половые гормоны</li>
+		</ul>
+		<div class="item__priceBlock">
+			<p class="item__price">Всего 2800₽</p>
+			<p class="item__oldPrice">3500₽</p>
+		</div>
+		<div class="item__buttons">
+			<button data-openModal class="item__button-booking button">Записаться</button>
+
+			<button data-openModal class="item__button-more button">Подробнее</button>
+
+		</div>
+	</div>
+</div>
+
+		</div>
+		<div class="services__item slide">
+			<div class="item">
+	<img
+		class="item__image"
+		src="../../img/services.png"
+		alt="services image"
+	/>
+	<div class="item__info">
+		<h3 class="item__title">Check-up 3</h3>
+		<p class="item__description">для мужчин</p>
+		<ul class="item__list">
+			<li>Гормональный скрининг</li>
+			<li>Тестостерон</li>
+			<li>Свободный тестостерон</li>
+			<li>Глобулин, связывающий половые гормоны</li>
+		</ul>
+		<div class="item__priceBlock">
+			<p class="item__price">Всего 2800₽</p>
+			<p class="item__oldPrice">3500₽</p>
+		</div>
+		<div class="item__buttons">
+			<button data-openModal class="item__button-booking button">Записаться</button>
+
+			<button data-openModal class="item__button-more button">Подробнее</button>
+
+		</div>
+	</div>
+</div>
+
+		</div>
+		<div class="services__item slide">
+			<div class="item">
+	<img
+		class="item__image"
+		src="../../img/services.png"
+		alt="services image"
+	/>
+	<div class="item__info">
+		<h3 class="item__title">Check-up 4</h3>
+		<p class="item__description">для мужчин</p>
+		<ul class="item__list">
+			<li>Гормональный скрининг</li>
+			<li>Тестостерон</li>
+			<li>Свободный тестостерон</li>
+			<li>Глобулин, связывающий половые гормоны</li>
+		</ul>
+		<div class="item__priceBlock">
+			<p class="item__price">Всего 2800₽</p>
+			<p class="item__oldPrice">3500₽</p>
+		</div>
+		<div class="item__buttons">
+			<button data-openModal class="item__button-booking button">Записаться</button>
+
+			<button data-openModal class="item__button-more button">Подробнее</button>
+
+		</div>
+	</div>
+</div>
+
+		</div>
+	</div>
+</div>
+
+
+		<div class="modal">
+    <div class="modal__content">
+      <button class="modal__close">Закрыть</button>  
+      <h2>Заполните форму</h2>
+      <form class="modal__form" action="send.php" method="POST">
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <input type="text" name="phone" placeholder="Ваш телефон" required>
+        <input type="submit" value="Отправить">
+      </form>
+    </div>
+</div>
+
+
+
+
+	</main>
+	<footer class="footer">
+  <div class="footer__links">
+    <h3 class="footer__logo"><a href="/">Logo</a></h3>
+      <div class="footer__menu-desktop">
+    <ul>
+      <li><a href="/about">О клинике</a></li>
+      <li><a href="/services">Услуги</a></li>
+      <li><a href="/specialists">Специалисты</a></li>
+      <li><a href="/price">Цены</a></li>
+      <li><a href="/contacts">Контакты</a></li>
+    </ul>
+  </div>
+    <div class="footer__socials">
+      <a href="http://instagram.com"><img src="../../img/instagram.svg" alt=""></a>
+      <a href="http://wa.com"><img src="../../img/wa.svg" alt=""></a>
+      <a href="http://twitter.com"><img src="../../img/telegram.svg" alt=""></a>
+    </div>
+  </div>
+  <div class="footer__menu">
+    <ul>
+      <li><a href="/about">О клинике</a></li>
+      <li><a href="/services">Услуги</a></li>
+      <li><a href="/specialists">Специалисты</a></li>
+      <li><a href="/price">Цены</a></li>
+      <li><a href="/contacts">Контакты</a></li>
+    </ul>
+  </div>
+</footer>
 
 	<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
+
 
 </body>
 

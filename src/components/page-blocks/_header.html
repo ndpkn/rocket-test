@@ -1,1 +1,44 @@
-<header class="header"></header>
+
+<header class="header">
+  <div class="header__burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <!-- desktop view -->
+  <div class="header__left">
+    <h2 class="header__logo"><a href="/">logo</a></h2>
+    <div class="header__address">
+      <p class="header__city"><img src="../../img/place.svg" alt="place">Ростов-на-Дону</p>
+      <p class="header__street">ул. Ленина, 2Б</p>
+    </div>
+  </div>
+  <div class="header__right">
+    <div class="header__phone">
+      <img src="../../img/wa.svg" alt="">
+      <a href="tel:+78630000000">+7(863) 000 00 00</a>
+    </div>
+    @@include('../bem-blocks/_button.html', {
+      "className": "header__mainButton",
+      "text": "Записаться"
+    })
+  </div>
+  <!-- end desktop view -->
+  <div class="header__info">
+    <a href="tel:+78630000000">+7(863) 000 00 00</a>
+    <p>Ростов-на-Дону</p>
+  </div>
+  <div class="header__menu">
+    <ul>
+      <li><a href="/about">О клинике</a></li>
+      <li><a href="/services">Услуги</a></li>
+      <li><a href="/specialists">Специалисты</a></li>
+      <li><a href="/price">Цены</a></li>
+      <li><a href="/contacts">Контакты</a></li>
+    </ul>
+    @@include('../bem-blocks/_button.html', {
+      "className": "header__menuButton",
+      "text": "Записаться"
+    })
+  </div>
+</header>
